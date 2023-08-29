@@ -9,7 +9,7 @@ import {NextPage} from "next";
 import CreatorCard from "../components/CreatorCard";
 
 const Home: React.FC = ({ creatorList, creatorIntro }) => {
-
+  console.log("creatorList : ", creatorList)
   return (
       <div className={styles.container}>
         <Head>
