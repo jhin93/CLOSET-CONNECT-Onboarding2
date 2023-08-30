@@ -1,6 +1,6 @@
 import styles from "styles/Home.module.css";
 import React, {useState} from "react";
-import {Button, CameraIcon, ContactIcon, LikeIcon, Modal, TypoBody, ViewIcon} from "@closet-design-system/core";
+import {Button, CameraIcon, ContactIcon, LikeIcon, TypoBody, ViewIcon, Modal} from "@closet-design-system/core";
 import {NATIONAL_CODE} from "../constants/nationalCode";
 import styled from "@emotion/styled";
 
@@ -70,10 +70,10 @@ const CreatorCard: React.FC<CreatorCardProps> = ({ dataObj }) => {
                     <ContactIcon />
                     <Button onClick={modalOpen}>{dataObj.followerCount}</Button>
                     <Modal isOpen={isModalOpen} onClose={modalClose} modalZIndex={10000}>
-                        <Modal.Header>제목</Modal.Header>
+                        <Modal.Header>ModalTitle</Modal.Header>
                         <Modal.Content>
-                            <TypoBody>컨텐츠로 무엇이든 올 수 있어요</TypoBody>
-                            <CameraIcon />
+                            {/* Modal.Content 에서는 Height 조절이 안되어 Content는 비우고 사용 */}
+                            <></>
                         </Modal.Content>
                         <Modal.Footer>
                             <Button onClick={modalClose}>닫기</Button>
