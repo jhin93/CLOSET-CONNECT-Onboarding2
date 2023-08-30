@@ -7,6 +7,7 @@ import { Button, ContactIcon, LikeIcon, ViewIcon, Modal, TypoBody, CameraIcon } 
 import Carousel from "react-material-ui-carousel";
 import {NextPage} from "next";
 import CreatorCard from "../components/CreatorCard";
+import ItemCarousel from "../components/ItemCarousel";
 
 const Home: React.FC = ({ creatorList, creatorIntro }) => {
   console.log("creatorList : ", creatorList)
@@ -23,16 +24,7 @@ const Home: React.FC = ({ creatorList, creatorIntro }) => {
             {creatorList.map((dataObj, index) => (
                 <div className={styles.grid} key={dataObj.userId}>
                   <CreatorCard dataObj={dataObj}/>
-
-                  {/*<div className={styles.slider}>*/}
-                  {/*  <Carousel cycleNavigation={true} navButtonsAlwaysVisible={true}>*/}
-                  {/*    {dataObj.items.map((content, index) => (*/}
-                  {/*        <div key={index}>*/}
-                  {/*          <img src={content.imagePath} className={styles.carouselImage} />*/}
-                  {/*        </div>*/}
-                  {/*    ))}*/}
-                  {/*  </Carousel>*/}
-                  {/*</div>*/}
+                  <ItemCarousel dataObj={dataObj}/>
                 </div>
             ))}
           </div>

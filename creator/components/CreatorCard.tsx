@@ -6,7 +6,7 @@ import styled from "@emotion/styled";
 
 
 interface CreatorCardProps {
-    dataObj: any; // dataObj의 타입을 적절하게 수정해야 합니다.
+    dataObj: any;
 }
 
 const CreatorCard: React.FC<CreatorCardProps> = ({ dataObj }) => {

@@ -5,9 +5,9 @@ import { theme } from '@closet-design-system/theme-connect';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-      <ThemeProvider theme={theme}>
+      // <ThemeProvider theme={theme}>
         <Component {...pageProps} />
-      </ThemeProvider>
+      // </ThemeProvider>
   )
 }
 
