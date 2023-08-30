@@ -2,10 +2,6 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import React, { useState } from 'react';
 import axios from 'axios';
-import { NATIONAL_CODE } from '../constants/nationalCode';
-import { Button, ContactIcon, LikeIcon, ViewIcon, Modal, TypoBody, CameraIcon } from '@closet-design-system/core-connect';
-import Carousel from "react-material-ui-carousel";
-import {NextPage} from "next";
 import CreatorCard from "../components/CreatorCard";
 import ItemCarousel from "../components/ItemCarousel";
 

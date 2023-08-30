@@ -1,10 +1,7 @@
 
 import Carousel from "react-material-ui-carousel";
 import React, {useState} from "react";
-import {NATIONAL_CODE} from "../constants/nationalCode";
-import {Button, CameraIcon, ContactIcon, LikeIcon, Modal, TypoBody, ViewIcon} from "@closet-design-system/core-connect";
 import styled from "@emotion/styled";
-import styles from "styles/Home.module.css";
 
 interface ItemCarousel {
     dataObj: any;
