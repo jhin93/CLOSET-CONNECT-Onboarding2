@@ -20,7 +20,7 @@ const Home: React.FC = ({ creatorList, creatorIntro }) => {
             {creatorList.map((dataObj, index) => (
                 <div className={styles.grid} key={dataObj.userId}>
                   <CreatorCard dataObj={dataObj}/>
-                  <ItemCarousel dataObj={dataObj}/>
+                  {/*<ItemCarousel dataObj={dataObj}/>*/}
                 </div>
             ))}
           </div>

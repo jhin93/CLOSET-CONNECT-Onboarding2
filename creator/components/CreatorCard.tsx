@@ -1,6 +1,6 @@
 import styles from "styles/Home.module.css";
 import React, {useState} from "react";
-import {Button, CameraIcon, ContactIcon, LikeIcon, Modal, TypoBody, ViewIcon} from "@closet-design-system/core-connect";
+import {Button, CameraIcon, ContactIcon, LikeIcon, Modal, TypoBody, ViewIcon} from "@closet-design-system/core";
 import {NATIONAL_CODE} from "../constants/nationalCode";
 import styled from "@emotion/styled";
 
